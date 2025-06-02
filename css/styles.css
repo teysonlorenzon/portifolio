@@ -113,7 +113,7 @@ html {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(-45deg, #1b1b1b, #2a2a2a, #1f1f1f, #333);
+  background: linear-gradient(-45deg, #2e2e2e, #2e2e2e, #2e2e2e, #2e2e2e);
   background-size: 400% 400%;
   animation: bg-animation 15s ease infinite;
   position: relative;
@@ -216,6 +216,9 @@ html {
   }
   .container {
     margin: 25px;
+  }
+  .introduction .title{
+    text-align: center;
   }
   footer {
     padding: 0 25px;
