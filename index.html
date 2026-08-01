@@ -2,88 +2,412 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Teyson Lorenzon - Portfólio</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teyson Lorenzon — AI Engineer | Full Stack Developer</title>
+  <meta name="description" content="Portfólio de Teyson Lorenzon, Engenheiro de Software Full Stack e AI Engineer. React, React Native, Node.js, Angular, Java, Spring Boot e Quarkus." />
+  <meta name="theme-color" content="#0a0f0c" />
+  <link rel="icon" href="data:,">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#sobre">Pular para o conteúdo</a>
 
-  <header class="hero">
-    <div class="particles" id="particles-js"></div>
-    <div class="container apresentation">
-      <h1>Teyson Lorenzon</h1>
-      <h2>Desenvolvedor Senior Full Stack</h2>
-      <div class="social">
-        <a href="https://www.linkedin.com/in/teyson-lorenzon-597658123/" target="_blank"><img class="icon" src="icons/linkedIn.png"/>LinkedIn</a>
-        <a href="https://github.com/teysonlorenzon" target="_blank"><img class="icon" src="icons/gitHub.png"/>GitHub</a>
-        <a href="https://www.instagram.com/teysonlorenzon/" target="_blank"><img class="icon" src="icons/instagram.png"/>Instagram</a>
-      </div>
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a class="logo" href="#topo" aria-label="Página inicial de Teyson Lorenzon">
+        <span class="logo-mark" aria-hidden="true">TL</span>
+        <span class="logo-text">Teyson<span class="accent">.</span>dev</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Abrir menu de navegação">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="nav" id="primaryNav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+          <li><a href="#formacao" class="nav-link">Formação</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <section id="about" class="section">
-      <div class="container inline">
-        <div class="image-div">
-          <img class="imagem-teyson" src="https://media.licdn.com/dms/image/v2/D4E03AQG1zv4bHX-29Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1637156220613?e=1754524800&v=beta&t=BAh8PGIu-wSaFZaBabZbr9Bpexn4apuPLFhNSwUJI_s"/>
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="avatar-photo">
+          <img src="teyson.jpeg" alt="Foto de Teyson Lorenzon" width="112" height="112" />
         </div>
-        <div class="introduction">
-          <h1 class="title">Criando Softwares que Impactam o Mundo !</h1>
-          <p>Desenvolvedor Senior na <a href="https://cresol.com.br/" target="_blank">Cresol</a> (time: Investimentos).</p>
-          <p class="info">Sou Teyson Lorenzon, desenvolvedor full stack, especialista em criação de sites e aplicativos mobile utilizando as linguagens Java e JavaScript com mais de 6 anos de exeriencia em.</p>
-          <div class="skill-grid">
-            <div class="skill-item">
-              <div>
-                <h2>JS / TS</h2>
-                <p><img class="icon" src="icons/react.png"/>React</p>
-                <p><img class="icon" src="icons/react.png"/>React Native</p>
-                <p><img class="icon" src="icons/angular.png"/>Angular</p>
-                <p><img class="icon" src="icons/next.png"/>Next</p>
-                <p><img class="icon" src="icons/nest.png"/>Nest</p>
-                <p><img class="icon" src="icons/jest.png"/>Jest</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div>
-                <h2>Java</h2>
-                <p><img class="icon" src="icons/spring.png"/>Spring Boot</p>
-                <p><img class="icon" src="icons/quarkus.png"/>Quarkus</p>
-                <p><img class="icon" src="icons/java.png"/>JSP</p>
-                <p><img class="icon" src="icons/junit.png"/>Junit</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div>
-                <h2>Seviços</h2>
-                <p><img class="icon" src="icons/docker.png"/>Docker</p>
-                <p><img class="icon" src="icons/postgresSQL.png"/>PostgreSQL</p>
-                <p><img class="icon" src="icons/azure.png"/>Azure</p>
-                <p><img class="icon" src="icons/micro.png"/>Microsserviços</p>
-                <p><img class="icon" src="icons/rest.png"/>API Rest</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div>
-                <h2>Agil</h2>
-                <p><img class="icon" src="icons/scrum.png"/>Scrum</p>
-                <p><img class="icon" src="icons/okr.png"/>OKR</p>
-              </div>
-            </div>
+
+        <p class="eyebrow reveal">Olá, eu sou</p>
+        <h1 id="hero-title" class="hero-title reveal">Teyson Lorenzon</h1>
+        <p class="hero-role reveal">AI Engineer <span class="dot-sep">|</span> Full Stack Developer</p>
+        <p class="hero-subtitle reveal">
+          React Native · React.js · Node.js · Angular · Java · Spring Boot · Quarkus
+        </p>
+        <p class="hero-location reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          Erechim, Rio Grande do Sul, Brasil
+        </p>
+
+        <div class="hero-cta reveal">
+          <a href="#contato" class="btn btn-primary">Contato</a>
+          <a href="https://www.linkedin.com/in/teyson-lorenzon-597658123/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M7 17 17 7M7 7h10v10"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <a href="#sobre" class="scroll-hint" aria-label="Rolar para a seção Sobre">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section" aria-labelledby="sobre-title">
+      <div class="container">
+        <p class="section-kicker reveal">Sobre mim</p>
+        <h2 id="sobre-title" class="section-title reveal">Quem sou eu</h2>
+
+        <div class="about-content reveal">
+          <p>
+            Engenheiro de Software Full Stack com mais de 6 anos de experiência no desenvolvimento de
+            soluções escaláveis e de alta performance, atuando em todo o ciclo de vida de produtos
+            digitais — do design de arquitetura à entrega em produção.
+          </p>
+          <p>
+            Possuo sólida experiência com frameworks JavaScript e Java, incluindo React, React Native,
+            Node.js e NestJS no front-end e back-end JavaScript, além de Spring Boot e Quarkus no
+            ecossistema Java. Domínio em testes automatizados com Jest e JUnit, garantindo qualidade e
+            confiabilidade no código entregue.
+          </p>
+          <p>
+            Tenho conhecimento em múltiplas linguagens de programação, como Python, Java, JavaScript e
+            PHP, o que me permite transitar entre diferentes stacks e contextos técnicos com facilidade.
+          </p>
+          <p>
+            Atualmente cursando pós-graduação em Engenharia de Software aplicada a Inteligência
+            Artificial, venho aprofundando meus conhecimentos técnicos e teóricos na área, aplicando
+            LLMs e ferramentas de IA generativa no desenvolvimento de software para acelerar entregas,
+            automatizar processos e criar produtos mais inteligentes. Tenho experiência integrando APIs
+            de IA, construindo pipelines de dados e desenvolvendo funcionalidades que unem engenharia
+            tradicional a capacidades de IA aplicada.
+          </p>
+          <p>
+            Busco constantemente equilibrar qualidade técnica, boas práticas de engenharia e inovação,
+            entregando valor real para o negócio. Tenho facilidade para trabalhar em times
+            multidisciplinares, mentorar desenvolvedores e traduzir requisitos complexos em soluções
+            simples e eficientes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="section section-alt" aria-labelledby="habilidades-title">
+      <div class="container">
+        <p class="section-kicker reveal">Stack técnica</p>
+        <h2 id="habilidades-title" class="section-title reveal">Habilidades</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3 class="skill-category">Linguagens</h3>
+            <ul class="tag-list">
+              <li class="tag">TypeScript</li>
+              <li class="tag">JavaScript</li>
+              <li class="tag">Java</li>
+              <li class="tag">Python</li>
+              <li class="tag">PHP</li>
+            </ul>
           </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-category">Frontend</h3>
+            <ul class="tag-list">
+              <li class="tag">React.js</li>
+              <li class="tag">React Native</li>
+              <li class="tag">Angular</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-category">Backend</h3>
+            <ul class="tag-list">
+              <li class="tag">Node.js</li>
+              <li class="tag">NestJS</li>
+              <li class="tag">Spring Boot</li>
+              <li class="tag">Quarkus</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-category">Testes</h3>
+            <ul class="tag-list">
+              <li class="tag">Jest</li>
+              <li class="tag">JUnit</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-category">IA / Dados</h3>
+            <ul class="tag-list">
+              <li class="tag">LLMs</li>
+              <li class="tag">APIs de IA generativa</li>
+              <li class="tag">Pipelines de dados</li>
+              <li class="tag">MCP</li>
+              <li class="tag">RAG</li>
+              <li class="tag">Spec-Driven Development</li>
+              <li class="tag">LangChain.js</li>
+              <li class="tag">OpenRouter</li>
+              <li class="tag">Chatbots com IA</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-category">Ferramentas</h3>
+            <ul class="tag-list">
+              <li class="tag">Git</li>
+              <li class="tag">GitLab</li>
+              <li class="tag">Docker</li>
+              <li class="tag">Jenkins</li>
+              <li class="tag">Kubernetes</li>
+              <li class="tag">Jira</li>
+              <li class="tag">Confluence</li>
+              <li class="tag">Azure</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section id="experiencia" class="section" aria-labelledby="experiencia-title">
+      <div class="container">
+        <p class="section-kicker reveal">Trajetória</p>
+        <h2 id="experiencia-title" class="section-title reveal">Experiência profissional</h2>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <h3 class="timeline-role">Desenvolvedor de Software</h3>
+                <span class="timeline-period">Jun 2023 – Atual · 3 anos e 3 meses</span>
+              </div>
+              <p class="timeline-company">Cresol Cooperativa · Florianópolis, SC</p>
+              <p class="timeline-desc">
+                Atuação full stack Java, frontend com JSP e backend com Quarkus, em projetos de
+                investimento. Desenvolvimento de melhorias, novas funcionalidades e correção de
+                aplicações. Metodologias: Scrum, OKR, Kanban.
+              </p>
+              <ul class="tag-list tag-list-sm">
+                <li class="tag tag-sm">TypeScript</li>
+                <li class="tag tag-sm">JavaScript</li>
+                <li class="tag tag-sm">Java</li>
+                <li class="tag tag-sm">JSP</li>
+                <li class="tag tag-sm">Quarkus</li>
+                <li class="tag tag-sm">JUnit</li>
+                <li class="tag tag-sm">React.js</li>
+                <li class="tag tag-sm">Jest</li>
+                <li class="tag tag-sm">Git</li>
+                <li class="tag tag-sm">GitLab</li>
+                <li class="tag tag-sm">Confluence</li>
+                <li class="tag tag-sm">Jira</li>
+                <li class="tag tag-sm">Jenkins</li>
+                <li class="tag tag-sm">Docker</li>
+                <li class="tag tag-sm">Portainer</li>
+                <li class="tag tag-sm">Azure</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <h3 class="timeline-role">Desenvolvedor de Software (Tech Lead Mobile)</h3>
+                <span class="timeline-period">Ago 2021 – Mai 2023 · 1 ano e 10 meses</span>
+              </div>
+              <p class="timeline-company">Capgemini · Salvador, Bahia</p>
+              <p class="timeline-desc">
+                Atuação com React Native, Angular, Spring Boot e Quarkus no projeto do Banco do Brasil
+                (App BB). Atuou também como Tech Lead mobile nos processos da Capgemini, desenvolvendo
+                telas e funcionalidades com a equipe de investimentos do BB, além de correção de bugs e
+                melhorias de performance. Metodologias: Scrum, OKR, Kanban.
+              </p>
+              <ul class="tag-list tag-list-sm">
+                <li class="tag tag-sm">TypeScript</li>
+                <li class="tag tag-sm">JavaScript</li>
+                <li class="tag tag-sm">Java</li>
+                <li class="tag tag-sm">React.js</li>
+                <li class="tag tag-sm">React Native</li>
+                <li class="tag tag-sm">Angular</li>
+                <li class="tag tag-sm">Node.js</li>
+                <li class="tag tag-sm">Spring Boot</li>
+                <li class="tag tag-sm">Quarkus</li>
+                <li class="tag tag-sm">Jest</li>
+                <li class="tag tag-sm">JUnit</li>
+                <li class="tag tag-sm">Git</li>
+                <li class="tag tag-sm">GitLab</li>
+                <li class="tag tag-sm">Device Farm</li>
+                <li class="tag tag-sm">ALM Portal (IBM)</li>
+                <li class="tag tag-sm">Android Studio</li>
+                <li class="tag tag-sm">xCode</li>
+                <li class="tag tag-sm">Jenkins</li>
+                <li class="tag tag-sm">Kubernetes</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <h3 class="timeline-role">Desenvolvedor de Software</h3>
+                <span class="timeline-period">Ago 2019 – Jul 2021 · 2 anos</span>
+              </div>
+              <p class="timeline-company">Compasso UOL · Erechim, Rio Grande do Sul</p>
+              <p class="timeline-desc">
+                Desenvolvedor Front-End com foco principal no cliente Natura, utilizando React.js.
+                Atuou também no time de sustentação e em squads de inovação.
+              </p>
+              <ul class="tag-list tag-list-sm">
+                <li class="tag tag-sm">React</li>
+                <li class="tag tag-sm">React Native</li>
+                <li class="tag tag-sm">Node.js</li>
+                <li class="tag tag-sm">NestJS</li>
+                <li class="tag tag-sm">CMS Drupal</li>
+                <li class="tag tag-sm">Python</li>
+                <li class="tag tag-sm">Java</li>
+                <li class="tag tag-sm">JavaScript</li>
+                <li class="tag tag-sm">PHP</li>
+                <li class="tag tag-sm">Jest</li>
+                <li class="tag tag-sm">Google Analytics</li>
+                <li class="tag tag-sm">DynaTrace</li>
+                <li class="tag tag-sm">Sensedia Gateway</li>
+                <li class="tag tag-sm">GrayLog</li>
+                <li class="tag tag-sm">Data Studio</li>
+                <li class="tag tag-sm">Oracle BCC</li>
+                <li class="tag tag-sm">Dynamo</li>
+                <li class="tag tag-sm">Akamai</li>
+                <li class="tag tag-sm">Git</li>
+                <li class="tag tag-sm">Jira</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <h3 class="timeline-role">Analista de Redes</h3>
+                <span class="timeline-period">Dez 2015 – Jun 2019 · 3 anos e 7 meses</span>
+              </div>
+              <p class="timeline-company">TolRS · Campinas do Sul, Rio Grande do Sul</p>
+              <p class="timeline-desc">
+                Implantação e administração de equipamentos Mikrotik e Ubiquiti (roteadores e Wi-Fi).
+                Melhoria e implementação de rede e segurança da informação. Instalação e manutenção de
+                internet residencial e empresarial. Implantação e administração de servidores Windows e
+                Linux. Suporte e manutenção de computadores.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section id="formacao" class="section section-alt" aria-labelledby="formacao-title">
+      <div class="container">
+        <p class="section-kicker reveal">Estudos</p>
+        <h2 id="formacao-title" class="section-title reveal">Formação acadêmica</h2>
+
+        <div class="education-grid">
+          <div class="education-card reveal">
+            <h3 class="education-degree">Bacharelado em Ciência da Computação</h3>
+            <p class="education-school">Universidade Regional Integrada do Alto Uruguai e das Missões</p>
+            <p class="education-period">2016 – Dezembro de 2021</p>
+          </div>
+
+          <div class="education-card reveal">
+            <h3 class="education-degree">
+              Pós-graduação em Engenharia de IA Aplicada
+              <span class="badge-progress">Em andamento</span>
+            </h3>
+            <p class="education-school">UNIPDS · em parceria com Anhanguera</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section contact-section" aria-labelledby="contato-title">
+      <div class="container">
+        <p class="section-kicker reveal">Vamos conversar</p>
+        <h2 id="contato-title" class="section-title reveal">Contato</h2>
+        <p class="contact-lede reveal">
+          Estou aberto a novas oportunidades, colaborações e conversas sobre engenharia de software e IA.
+        </p>
+
+        <div class="contact-actions reveal">
+          <button type="button" class="btn btn-primary" id="copyEmailBtn" data-email="teyson_lorenzon@hotmail.com">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="m3 7 9 6 9-6"/>
+            </svg>
+            <span id="copyEmailLabel">teyson_lorenzon@hotmail.com</span>
+          </button>
+
+          <a href="https://www.linkedin.com/in/teyson-lorenzon-597658123/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56z"/>
+            </svg>
+            LinkedIn
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div>
-      <p>&copy; 2025 Teyson Lorenzon. Todos os direitos reservados.</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Teyson Lorenzon. Todos os direitos reservados.</p>
+      <div class="footer-social">
+        <a href="mailto:teyson_lorenzon@hotmail.com" aria-label="Enviar e-mail para Teyson Lorenzon" class="social-link">
+          <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="m3 7 9 6 9-6"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/teyson-lorenzon-597658123/" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Teyson Lorenzon no LinkedIn" class="social-link">
+          <svg class="icon icon-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56z"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
-  <script src="js/particule.min.js"></script>
-  <script src="js/script.js"></script>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
