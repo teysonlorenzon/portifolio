@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Teyson Lorenzon — AI Engineer | Full Stack Developer</title>
-  <meta name="description" content="Portfólio de Teyson Lorenzon, Engenheiro de Software Full Stack e AI Engineer. React, React Native, Node.js, Angular, Java, Spring Boot e Quarkus." />
+  <title>Teyson Lorenzon — AI Applied Engineer | Senior Full Stack Developer</title>
+  <meta name="description" content="Portfólio de Teyson Lorenzon, AI Applied Engineer e Desenvolvedor Full Stack Sênior. Java, TypeScript, Spring Boot, Quarkus, Node.js, NestJS, React, Next.js e React Native." />
   <meta name="theme-color" content="#0a0f0c" />
   <link rel="icon" href="data:,">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="story.css" />
 </head>
 <body>
   <a class="skip-link" href="#sobre">Pular para o conteúdo</a>
@@ -41,47 +42,235 @@
   </header>
 
   <main id="conteudo">
-    <!-- HERO -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="container hero-inner">
-        <div class="avatar-photo">
-          <img src="teyson.jpeg" alt="Foto de Teyson Lorenzon" width="112" height="112" />
+    <section class="story" id="apresentacao" aria-labelledby="hero-title">
+      <div class="story-stage" id="storyStage">
+        <div class="story-glow" aria-hidden="true"></div>
+
+        <div class="story-doodles" aria-hidden="true">
+          <span class="doodle doodle-plus" style="--x: 14%; --y: 34%; --depth: 1.2">+</span>
+          <span class="doodle doodle-plus" style="--x: 82%; --y: 46%; --depth: 0.7">+</span>
+          <span class="doodle doodle-code" style="--x: 76%; --y: 22%; --depth: 1.6">&lt;/&gt;</span>
+          <span class="doodle doodle-code" style="--x: 9%; --y: 58%; --depth: 0.9">{ }</span>
+          <svg class="doodle doodle-wave" style="--x: 84%; --y: 30%; --depth: 1" viewBox="0 0 120 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 20c10-18 20-18 30 0s20 18 30 0 20-18 30 0 20 18 26 4"/></svg>
+          <svg class="doodle doodle-wave" style="--x: 18%; --y: 72%; --depth: 1.4" viewBox="0 0 120 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 30C30 30 20 6 50 8s30 26 66 4"/></svg>
         </div>
 
-        <p class="eyebrow reveal">Olá, eu sou</p>
-        <h1 id="hero-title" class="hero-title reveal">Teyson Lorenzon</h1>
-        <p class="hero-role reveal">AI Engineer <span class="dot-sep">|</span> Full Stack Developer</p>
-        <p class="hero-subtitle reveal">
-          React Native · React.js · Node.js · Angular · Java · Spring Boot · Quarkus
-        </p>
-        <p class="hero-location reveal">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
-            <circle cx="12" cy="10" r="3"/>
+        <p class="story-pill" data-pill>Da ideia ao deploy</p>
+
+        <div class="story-intro" data-scene="0" data-motion="intro">
+          <p class="story-eyebrow">Olá, eu sou</p>
+          <h1 id="hero-title" class="story-name">Teyson Lorenzon</h1>
+          <p class="story-role">AI Applied Engineer <span class="dot-sep">|</span> <span class="accent">Senior Full Stack Developer</span></p>
+        </div>
+
+        <p class="story-word" data-scene="1" aria-hidden="true">Interface</p>
+        <p class="story-word" data-scene="2" aria-hidden="true">Backend</p>
+        <p class="story-word" data-scene="3" aria-hidden="true">IA aplicada</p>
+        <p class="story-word" data-scene="4" aria-hidden="true">Deploy</p>
+
+        <div class="story-accent accent-tags" data-scene="1" data-motion="accent" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <path class="bracket" d="M38 62 10 100l28 38" />
+            <path class="bracket" d="M146 56 130 144M162 62l28 38-28 38" />
+            <path class="cursor" d="M150 18v30l8-8 6 13 5-2-6-13h11z" />
           </svg>
-          Erechim, Rio Grande do Sul, Brasil
-        </p>
-
-        <div class="hero-cta reveal">
-          <a href="#contato" class="btn btn-primary">Contato</a>
-          <a href="https://www.linkedin.com/in/teyson-lorenzon-597658123/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M7 17 17 7M7 7h10v10"/>
-            </svg>
-          </a>
         </div>
-      </div>
+        <div class="story-accent accent-flow" data-scene="2" data-motion="accent" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <marker id="flowArrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+                <path d="M0 0 10 5 0 10z" />
+              </marker>
+            </defs>
+            <path class="flow" d="M22 92A80 80 0 0 1 178 92" marker-end="url(#flowArrow)" />
+            <path class="flow" d="M178 120A80 80 0 0 1 22 120" marker-end="url(#flowArrow)" />
+          </svg>
+        </div>
+        <div class="story-accent accent-net" data-scene="3" data-motion="accent" aria-hidden="true">
+          <svg viewBox="0 0 200 200"><g class="edges"><path d="M30 60 100 30 170 60M30 60 70 110 100 30 130 110 170 60M70 110 100 170 130 110M30 140 70 110M170 140 130 110M30 140 100 170 170 140"/></g><g class="nodes"><circle cx="30" cy="60" r="7"/><circle cx="100" cy="30" r="7"/><circle cx="170" cy="60" r="7"/><circle cx="70" cy="110" r="7"/><circle cx="130" cy="110" r="7"/><circle cx="30" cy="140" r="7"/><circle cx="170" cy="140" r="7"/><circle cx="100" cy="170" r="7"/></g></svg>
+        </div>
+        <div class="story-accent accent-loop" data-scene="4" data-motion="accent" aria-hidden="true">
+          <svg viewBox="0 0 200 120"><path d="M100 60c-22-34-74-34-74 0s52 34 74 0 74-34 74 0-52 34-74 0z"/></svg>
+        </div>
 
-      <a href="#sobre" class="scroll-hint" aria-label="Rolar para a seção Sobre">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path d="M12 5v14M5 12l7 7 7-7"/>
-        </svg>
-      </a>
+        <div class="stack" id="storyStack" aria-hidden="true">
+          <div class="stack-shadow"></div>
+          <div class="stack-tilt" id="storyTilt">
+
+            <div class="layer" style="--i: 0">
+              <div class="face face-blank" data-face="0"></div>
+              <div class="face face-html" data-face="1">
+                <span class="face-label">&lt;html&gt; estrutura</span>
+                <div class="wire wire-head"></div>
+                <div class="wire wire-hero"></div>
+                <div class="wire-row"><div class="wire"></div><div class="wire"></div><div class="wire"></div></div>
+              </div>
+              <div class="face face-db" data-face="2">
+                <span class="face-label">Banco de dados</span>
+                <div class="db-row"><i class="db"></i><i class="db"></i><i class="db"></i></div>
+              </div>
+              <div class="face face-data" data-face="3">
+                <span class="face-label">Dados</span>
+                <div class="dot-grid"></div>
+              </div>
+              <div class="face face-cloud" data-face="4">
+                <span class="face-label">Azure · nuvem</span>
+                <svg viewBox="0 0 120 70" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"><path d="M30 62h62a20 20 0 0 0 2-40 28 28 0 0 0-53-6A23 23 0 0 0 30 62z"/></svg>
+              </div>
+            </div>
+
+            <div class="layer" style="--i: 1">
+              <div class="face face-blank" data-face="0"></div>
+              <div class="face face-css" data-face="1">
+                <span class="face-label">{ css } estilo</span>
+                <div class="swatches"><i></i><i></i><i></i><i></i></div>
+              </div>
+              <div class="face face-java" data-face="2">
+                <span class="face-label">Microsserviços Java</span>
+                <div class="chips"><span>Spring Boot</span><span>Quarkus</span><span>Java 17</span></div>
+              </div>
+              <div class="face face-rag" data-face="3">
+                <span class="face-label">RAG · embeddings</span>
+                <div class="scatter"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <div class="face face-k8s" data-face="4">
+                <span class="face-label">Kubernetes</span>
+                <div class="pods"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+            </div>
+
+            <div class="layer" style="--i: 2">
+              <div class="face face-blank" data-face="0"></div>
+              <div class="face face-components" data-face="1">
+                <span class="face-label">&lt;Componentes /&gt;</span>
+                <div class="comp comp-a"></div><div class="comp comp-b"></div><div class="comp comp-c"></div>
+              </div>
+              <div class="face face-api" data-face="2">
+                <span class="face-label">API REST · Node.js</span>
+                <ul class="endpoints">
+                  <li><b>GET</b> /seguros <em>200</em></li>
+                  <li><b>POST</b> /investimentos <em>201</em></li>
+                  <li><b>GET</b> /clientes/:id <em>200</em></li>
+                </ul>
+              </div>
+              <div class="face face-llm" data-face="3">
+                <span class="face-label">LLM</span>
+                <svg viewBox="0 0 160 90" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 20 80 15 140 20M20 45 80 45 140 45M20 70 80 75 140 70M20 20 80 45 140 70M20 70 80 45 140 20M20 45 80 15M20 45 80 75M80 15 140 45M80 75 140 45"/><g fill="currentColor"><circle cx="20" cy="20" r="5"/><circle cx="20" cy="45" r="5"/><circle cx="20" cy="70" r="5"/><circle cx="80" cy="15" r="5"/><circle cx="80" cy="45" r="6"/><circle cx="80" cy="75" r="5"/><circle cx="140" cy="20" r="5"/><circle cx="140" cy="45" r="5"/><circle cx="140" cy="70" r="5"/></g></svg>
+              </div>
+              <div class="face face-docker" data-face="4">
+                <span class="face-label">Docker</span>
+                <div class="containers"><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+            </div>
+
+            <div class="layer" style="--i: 3">
+              <div class="face face-editor" data-face="0">
+                <div class="editor-bar"><i></i><i></i><i></i><span>Teyson.java</span></div>
+<pre class="editor-code"><code><span class="k">public class</span> <span class="v">Teyson</span> {
+  <span class="t">String</span> role = <span class="s">"AI Applied Engineer"</span>;
+  <span class="t">String</span>[] stack = {<span class="s">"React"</span>, <span class="s">"Node"</span>, <span class="s">"Java"</span>};
+  <span class="t">String</span> experiencia = <span class="s">"6+ anos"</span>;
+  <span class="t">String</span> foco = <span class="s">"IA aplicada"</span>;
+}<span class="caret"></span></code></pre>
+              </div>
+              <div class="face face-ui" data-face="1">
+                <div class="ui-bar"><i></i><i></i><i></i></div>
+                <div class="ui-hero"><b></b><span></span><em></em></div>
+                <div class="ui-cards"><i></i><i></i><i></i></div>
+              </div>
+              <div class="face face-tests" data-face="2">
+                <span class="face-label">Testes</span>
+                <ul class="checks">
+                  <li>✓ JUnit <span>unitários</span></li>
+                  <li>✓ Jest <span>integração</span></li>
+                  <li>✓ Playwright <span>E2E</span></li>
+                </ul>
+              </div>
+              <div class="face face-chat" data-face="3">
+                <span class="face-label">Agente · MCP</span>
+                <p class="bubble bubble-user">Resuma meus investimentos</p>
+                <p class="bubble bubble-ai">Claro! Consultei 3 fontes e…</p>
+              </div>
+              <div class="face face-pipeline" data-face="4">
+                <span class="face-label">CI/CD · Jenkins</span>
+                <ol class="pipeline"><li>build</li><li>test</li><li>deploy</li></ol>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="story-intro-bar" data-scene="0" data-motion="bar">
+          <p class="intro-lede">
+            Desenvolvedor full stack sênior com <strong>6+ anos</strong> criando produtos web, mobile e de IA
+            para <strong>Banco do Brasil, Natura e Cresol</strong>.
+          </p>
+          <ul class="intro-facts">
+            <li><strong>React · React Native</strong><span>Web e mobile</span></li>
+            <li><strong>Java · Node.js</strong><span>APIs e microsserviços</span></li>
+            <li><strong>LLMs · RAG · MCP</strong><span>IA aplicada</span></li>
+          </ul>
+        </div>
+
+        <div class="story-copy" data-scene="1">
+          <h2 class="story-kicker"><span>01</span> Frontend</h2>
+          <p>Tudo começa na tela. Crio interfaces web e mobile com componentes reutilizáveis, acessíveis e rápidas, do App do Banco do Brasil ao e-commerce da Natura.</p>
+        </div>
+        <ul class="story-list" data-scene="1">
+          <li><strong>React.js &amp; Next.js</strong><span>SPAs e portais web</span></li>
+          <li><strong>React Native</strong><span>Apps iOS e Android</span></li>
+          <li><strong>Angular</strong><span>Sistemas corporativos</span></li>
+        </ul>
+
+        <div class="story-copy" data-scene="2">
+          <h2 class="story-kicker"><span>02</span> Backend</h2>
+          <p>Por trás de cada tela, serviços que aguentam o volume. Microsserviços Java e Node.js para sistemas de seguros e investimentos, com testes unitários, de integração e E2E.</p>
+        </div>
+        <ul class="story-list" data-scene="2">
+          <li><strong>Node.js &amp; NestJS</strong><span>APIs em TypeScript</span></li>
+          <li><strong>Spring Boot &amp; Quarkus</strong><span>Microsserviços Java</span></li>
+          <li><strong>JUnit, Jest &amp; Playwright</strong><span>Unitários, integração e E2E</span></li>
+        </ul>
+
+        <div class="story-copy" data-scene="3">
+          <h2 class="story-kicker"><span>03</span> Inteligência artificial</h2>
+          <p>Engenharia de software com IA de verdade. Integro LLMs a produtos: chatbots, RAG sobre os dados do negócio e agentes conectados a ferramentas via MCP.</p>
+        </div>
+        <ul class="story-list" data-scene="3">
+          <li><strong>LLMs &amp; RAG</strong><span>Respostas com contexto</span></li>
+          <li><strong>MCP &amp; LangChain.js</strong><span>Agentes com ferramentas</span></li>
+          <li><strong>Spec-Driven Development</strong><span>IA no ciclo de engenharia</span></li>
+        </ul>
+
+        <div class="story-copy" data-scene="4">
+          <h2 class="story-kicker"><span>04</span> DevOps</h2>
+          <p>Do commit à produção. Pipelines de CI/CD, containers e nuvem para entregar com frequência e segurança.</p>
+        </div>
+        <ul class="story-list" data-scene="4">
+          <li><strong>Docker &amp; Kubernetes</strong><span>Containers e orquestração</span></li>
+          <li><strong>Jenkins &amp; GitLab</strong><span>Pipelines de CI/CD</span></li>
+          <li><strong>Azure</strong><span>Infraestrutura em nuvem</span></li>
+        </ul>
+
+        <div class="story-controls">
+          <button type="button" class="story-play" id="storyPlay" aria-pressed="false">
+            <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>
+            <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
+            <span class="story-play-label">Autoplay</span>
+          </button>
+          <ol class="story-chapters" aria-label="Capítulos da apresentação">
+            <li><button type="button" data-chapter="0"><span class="chapter-name">Início</span><i><b></b></i></button></li>
+            <li><button type="button" data-chapter="1"><span class="chapter-name">Frontend</span><i><b></b></i></button></li>
+            <li><button type="button" data-chapter="2"><span class="chapter-name">Backend</span><i><b></b></i></button></li>
+            <li><button type="button" data-chapter="3"><span class="chapter-name">IA</span><i><b></b></i></button></li>
+            <li><button type="button" data-chapter="4"><span class="chapter-name">DevOps</span><i><b></b></i></button></li>
+          </ol>
+        </div>
+
+        <a href="#sobre" class="story-skip">Pular apresentação</a>
+      </div>
     </section>
 
-    <!-- SOBRE -->
     <section id="sobre" class="section" aria-labelledby="sobre-title">
       <div class="container">
         <p class="section-kicker reveal">Sobre mim</p>
@@ -89,39 +278,36 @@
 
         <div class="about-content reveal">
           <p>
-            Engenheiro de Software Full Stack com mais de 6 anos de experiência no desenvolvimento de
-            soluções escaláveis e de alta performance, atuando em todo o ciclo de vida de produtos
-            digitais — do design de arquitetura à entrega em produção.
+            Desenvolvedor de Software Full Stack Sênior, formado em Ciência da Computação, com mais de
+            6 anos de experiência e foco em Java e JavaScript/TypeScript, atuando em todo o ciclo de vida
+            de produtos digitais — do design de arquitetura à entrega em produção.
           </p>
           <p>
-            Possuo sólida experiência com frameworks JavaScript e Java, incluindo React, React Native,
-            Node.js e NestJS no front-end e back-end JavaScript, além de Spring Boot e Quarkus no
-            ecossistema Java. Domínio em testes automatizados com Jest e JUnit, garantindo qualidade e
-            confiabilidade no código entregue.
+            No back-end, trabalho com Spring Boot, Quarkus, Node.js e NestJS. No front-end e no mobile,
+            com React, Next.js e React Native. Em qualidade, uso testes automatizados unitários e de
+            integração com JUnit e Jest, e testes end-to-end (E2E) com Playwright.
           </p>
           <p>
             Tenho conhecimento em múltiplas linguagens de programação, como Python, Java, JavaScript e
             PHP, o que me permite transitar entre diferentes stacks e contextos técnicos com facilidade.
           </p>
           <p>
-            Atualmente cursando pós-graduação em Engenharia de Software aplicada a Inteligência
-            Artificial, venho aprofundando meus conhecimentos técnicos e teóricos na área, aplicando
+            Atualmente cursando pós-graduação em Engenharia de IA Aplicada, venho aprofundando meus conhecimentos técnicos e teóricos na área, aplicando
             LLMs e ferramentas de IA generativa no desenvolvimento de software para acelerar entregas,
             automatizar processos e criar produtos mais inteligentes. Tenho experiência integrando APIs
             de IA, construindo pipelines de dados e desenvolvendo funcionalidades que unem engenharia
             tradicional a capacidades de IA aplicada.
           </p>
           <p>
-            Busco constantemente equilibrar qualidade técnica, boas práticas de engenharia e inovação,
-            entregando valor real para o negócio. Tenho facilidade para trabalhar em times
-            multidisciplinares, mentorar desenvolvedores e traduzir requisitos complexos em soluções
-            simples e eficientes.
+            Na Cresol, tenho responsabilidade técnica sobre arquitetura, qualidade e evolução de sistemas
+            de seguros e investimentos: tomo decisões técnicas, defino padrões de desenvolvimento, faço
+            code reviews e mentoro o time. Gosto de resolver problemas complexos com soluções simples e
+            escaláveis.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- HABILIDADES -->
     <section id="habilidades" class="section section-alt" aria-labelledby="habilidades-title">
       <div class="container">
         <p class="section-kicker reveal">Stack técnica</p>
@@ -143,8 +329,10 @@
             <h3 class="skill-category">Frontend</h3>
             <ul class="tag-list">
               <li class="tag">React.js</li>
+              <li class="tag">Next.js</li>
               <li class="tag">React Native</li>
               <li class="tag">Angular</li>
+              <li class="tag">JSP</li>
             </ul>
           </div>
 
@@ -161,8 +349,10 @@
           <div class="skill-card reveal">
             <h3 class="skill-category">Testes</h3>
             <ul class="tag-list">
-              <li class="tag">Jest</li>
               <li class="tag">JUnit</li>
+              <li class="tag">Jest</li>
+              <li class="tag">Playwright (E2E)</li>
+              <li class="tag">Testes de integração</li>
             </ul>
           </div>
 
@@ -178,6 +368,19 @@
               <li class="tag">LangChain.js</li>
               <li class="tag">OpenRouter</li>
               <li class="tag">Chatbots com IA</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-category">Liderança técnica</h3>
+            <ul class="tag-list">
+              <li class="tag">Arquitetura de software</li>
+              <li class="tag">Decisões técnicas</li>
+              <li class="tag">Code review</li>
+              <li class="tag">Mentoria</li>
+              <li class="tag">Scrum</li>
+              <li class="tag">Kanban</li>
+              <li class="tag">OKRs</li>
             </ul>
           </div>
 
@@ -198,7 +401,6 @@
       </div>
     </section>
 
-    <!-- EXPERIÊNCIA -->
     <section id="experiencia" class="section" aria-labelledby="experiencia-title">
       <div class="container">
         <p class="section-kicker reveal">Trajetória</p>
@@ -209,32 +411,66 @@
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-card">
               <div class="timeline-head">
-                <h3 class="timeline-role">Desenvolvedor de Software</h3>
-                <span class="timeline-period">Jun 2023 – Atual · 3 anos e 3 meses</span>
+                <h3 class="timeline-role">Cresol Cooperativa</h3>
+                <span class="timeline-period">Jun 2023 – Atual · <span data-since="2023-06">3 anos e 6 meses</span></span>
               </div>
-              <p class="timeline-company">Cresol Cooperativa · Florianópolis, SC</p>
-              <p class="timeline-desc">
-                Atuação full stack Java, frontend com JSP e backend com Quarkus, em projetos de
-                investimento. Desenvolvimento de melhorias, novas funcionalidades e correção de
-                aplicações. Metodologias: Scrum, OKR, Kanban.
-              </p>
+              <p class="timeline-company">Florianópolis, SC · 2 cargos</p>
+
+              <ol class="timeline-positions">
+                <li class="timeline-position">
+                  <div class="timeline-head">
+                    <h4 class="timeline-position-title">Desenvolvedor Full Stack Sênior</h4>
+                    <span class="timeline-period">Jul 2024 – Atual · <span data-since="2024-07">2 anos e 5 meses</span></span>
+                  </div>
+                  <p class="timeline-desc">
+                    Atuação full stack em sistemas de seguros e investimentos da cooperativa, com
+                    responsabilidade técnica sobre arquitetura, qualidade e evolução das aplicações.
+                  </p>
+                  <ul class="timeline-bullets">
+                    <li>Tomada de decisões técnicas e definição de soluções e padrões de desenvolvimento</li>
+                    <li>Mentoria e repasse de conhecimento para o time, incluindo code reviews</li>
+                    <li>Garantia de qualidade com testes automatizados (JUnit e Jest)</li>
+                    <li>Integração de IA ao fluxo de desenvolvimento para acelerar entregas</li>
+                    <li>Alinhamento com produto e negócio em times ágeis (Scrum, Kanban, OKRs)</li>
+                  </ul>
+                </li>
+
+                <li class="timeline-position">
+                  <div class="timeline-head">
+                    <h4 class="timeline-position-title">Desenvolvedor Full Stack Pleno</h4>
+                    <span class="timeline-period">Jun 2023 – Jul 2024 · 1 ano e 2 meses</span>
+                  </div>
+                  <p class="timeline-desc">
+                    Atuação full stack em sistemas de investimentos da cooperativa, com front-end em JSP,
+                    React e Next.js e back-end em Java com Quarkus.
+                  </p>
+                  <ul class="timeline-bullets">
+                    <li>Desenvolvimento de novas funcionalidades, melhorias e correção de bugs</li>
+                    <li>Testes automatizados com JUnit e Jest</li>
+                    <li>Trabalho em times ágeis com Scrum, Kanban e OKRs</li>
+                  </ul>
+                </li>
+              </ol>
+
               <ul class="tag-list tag-list-sm">
+                <li class="tag tag-sm">Java</li>
                 <li class="tag tag-sm">TypeScript</li>
                 <li class="tag tag-sm">JavaScript</li>
-                <li class="tag tag-sm">Java</li>
-                <li class="tag tag-sm">JSP</li>
                 <li class="tag tag-sm">Quarkus</li>
+                <li class="tag tag-sm">Spring Boot</li>
+                <li class="tag tag-sm">React</li>
+                <li class="tag tag-sm">Next.js</li>
+                <li class="tag tag-sm">JSP</li>
                 <li class="tag tag-sm">JUnit</li>
-                <li class="tag tag-sm">React.js</li>
                 <li class="tag tag-sm">Jest</li>
                 <li class="tag tag-sm">Git</li>
                 <li class="tag tag-sm">GitLab</li>
-                <li class="tag tag-sm">Confluence</li>
-                <li class="tag tag-sm">Jira</li>
                 <li class="tag tag-sm">Jenkins</li>
                 <li class="tag tag-sm">Docker</li>
                 <li class="tag tag-sm">Portainer</li>
                 <li class="tag tag-sm">Azure</li>
+                <li class="tag tag-sm">Jira</li>
+                <li class="tag tag-sm">Confluence</li>
               </ul>
             </div>
           </li>
@@ -334,7 +570,6 @@
       </div>
     </section>
 
-    <!-- FORMAÇÃO -->
     <section id="formacao" class="section section-alt" aria-labelledby="formacao-title">
       <div class="container">
         <p class="section-kicker reveal">Estudos</p>
@@ -358,7 +593,6 @@
       </div>
     </section>
 
-    <!-- CONTATO -->
     <section id="contato" class="section contact-section" aria-labelledby="contato-title">
       <div class="container">
         <p class="section-kicker reveal">Vamos conversar</p>
@@ -409,5 +643,6 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="script.js"></script>
+  <script src="story.js"></script>
 </body>
 </html>

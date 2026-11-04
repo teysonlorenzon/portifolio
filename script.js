@@ -1,12 +1,13 @@
 (() => {
   "use strict";
 
-  /* ----------------------------------------------------------------------
-     Mobile navigation toggle
-     ---------------------------------------------------------------------- */
   const navToggle = document.getElementById("navToggle");
   const nav = document.getElementById("primaryNav");
 
+  /**
+   * Fecha o menu de navegação mobile e atualiza os atributos de acessibilidade do botão.
+   * @returns {void}
+   */
   function closeNav() {
     nav.classList.remove("is-open");
     navToggle.classList.remove("is-active");
@@ -15,6 +16,10 @@
     document.body.classList.remove("nav-open");
   }
 
+  /**
+   * Abre o menu de navegação mobile e trava a rolagem da página por trás dele.
+   * @returns {void}
+   */
   function openNav() {
     nav.classList.add("is-open");
     navToggle.classList.add("is-active");
@@ -41,9 +46,6 @@
     });
   }
 
-  /* ----------------------------------------------------------------------
-     Smooth scroll for in-page anchor links (with sticky header offset)
-     ---------------------------------------------------------------------- */
   const header = document.querySelector(".site-header");
 
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -67,9 +69,6 @@
     });
   });
 
-  /* ----------------------------------------------------------------------
-     Scroll reveal animation
-     ---------------------------------------------------------------------- */
   const revealEls = document.querySelectorAll(".reveal");
 
   if ("IntersectionObserver" in window && revealEls.length) {
@@ -93,9 +92,6 @@
     revealEls.forEach((el) => el.classList.add("is-visible"));
   }
 
-  /* ----------------------------------------------------------------------
-     Active nav link highlighting based on section in view
-     ---------------------------------------------------------------------- */
   const sections = document.querySelectorAll("main section[id]");
   const navLinks = document.querySelectorAll(".nav-link");
 
@@ -117,15 +113,18 @@
     sections.forEach((section) => sectionObserver.observe(section));
   }
 
-  /* ----------------------------------------------------------------------
-     Copy email to clipboard
-     ---------------------------------------------------------------------- */
   const copyEmailBtn = document.getElementById("copyEmailBtn");
   const copyEmailLabel = document.getElementById("copyEmailLabel");
   const toast = document.getElementById("toast");
 
+  /** @type {number | undefined} */
   let toastTimeout;
 
+  /**
+   * Exibe uma notificação temporária no rodapé da tela.
+   * @param {string} message Texto exibido na notificação.
+   * @returns {void}
+   */
   function showToast(message) {
     if (!toast) return;
     toast.textContent = message;
@@ -167,9 +166,10 @@
     });
   }
 
-  /* ----------------------------------------------------------------------
-     Header shadow/background intensity on scroll
-     ---------------------------------------------------------------------- */
+  /**
+   * Aplica uma sombra ao cabeçalho fixo assim que a página sai do topo.
+   * @returns {void}
+   */
   function updateHeaderOnScroll() {
     if (!header) return;
     if (window.scrollY > 8) {
@@ -182,9 +182,35 @@
   window.addEventListener("scroll", updateHeaderOnScroll, { passive: true });
   updateHeaderOnScroll();
 
-  /* ----------------------------------------------------------------------
-     Footer year
-     ---------------------------------------------------------------------- */
+  /**
+   * Formata uma quantidade de meses no padrão do LinkedIn, por exemplo "2 anos e 5 meses".
+   * @param {number} totalMonths Total de meses, já contando o mês inicial e o atual.
+   * @returns {string} Duração por extenso em português.
+   */
+  function formatDuration(totalMonths) {
+    const years = Math.floor(totalMonths / 12);
+    const months = totalMonths % 12;
+    const parts = [];
+    if (years) parts.push(`${years} ${years === 1 ? "ano" : "anos"}`);
+    if (months) parts.push(`${months} ${months === 1 ? "mês" : "meses"}`);
+    return parts.join(" e ") || "1 mês";
+  }
+
+  /**
+   * Conta os meses entre um mês inicial e a data atual, incluindo os dois extremos.
+   * @param {string} since Mês inicial no formato "AAAA-MM".
+   * @param {Date} [now=new Date()] Data de referência.
+   * @returns {number} Total de meses.
+   */
+  function monthsSince(since, now = new Date()) {
+    const [year, month] = since.split("-").map(Number);
+    return (now.getFullYear() - year) * 12 + (now.getMonth() + 1 - month) + 1;
+  }
+
+  document.querySelectorAll("[data-since]").forEach((el) => {
+    el.textContent = formatDuration(monthsSince(el.dataset.since));
+  });
+
   const yearEl = document.getElementById("year");
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
