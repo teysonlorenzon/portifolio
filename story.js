@@ -83,6 +83,9 @@
   /** Indica se já existe um quadro de renderização agendado. */
   let ticking = false;
 
+  /** Indica se já existe uma nova medição do layout agendada. */
+  let refreshQueued = false;
+
   let start = 0;
   let distance = 1;
   let stageH = 1;
@@ -320,8 +323,21 @@
    * @returns {void}
    */
   function refresh() {
+    refreshQueued = false;
     measure();
     render();
+  }
+
+  /**
+   * Agenda um único {@link refresh} para o próximo quadro. Usado quando o layout muda
+   * depois da inicialização, por exemplo quando o CSS ou as fontes terminam de carregar.
+   * @returns {void}
+   */
+  function requestRefresh() {
+    if (!refreshQueued) {
+      refreshQueued = true;
+      requestAnimationFrame(refresh);
+    }
   }
 
   playBtn.addEventListener("click", () => (playing ? stop() : play()));
@@ -338,8 +354,13 @@
   );
 
   window.addEventListener("scroll", requestRender, { passive: true });
-  window.addEventListener("resize", refresh);
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(refresh);
+  window.addEventListener("resize", requestRefresh);
+  window.addEventListener("load", requestRefresh);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(requestRefresh);
+  if ("ResizeObserver" in window) {
+    const layoutObserver = new ResizeObserver(requestRefresh);
+    [story, stage, stack, intro, introBar].forEach((el) => layoutObserver.observe(el));
+  }
   refresh();
   setPlaying(false);
 
